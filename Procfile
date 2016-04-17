@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT  target\classes\project\Application
+web: java -Dserver.port=$PORT  target\classes\project Application
