@@ -73,7 +73,7 @@ public class HomeController {
 	
 	
 	@RequestMapping(path="/register/{username}/{password}/{userdata}", method=RequestMethod.GET)
-	@ResponseBody 
+	@ResponseBody
 	public String register(
 			@PathVariable("password") String pw, 
 			@PathVariable("username") String un,
@@ -386,22 +386,13 @@ public class HomeController {
 	}
 	
 	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	@RequestMapping(value="/")
+	@ResponseBody
 	public String redirectToLogin(){
 		//System.out.print("1001");
-		return "redirect:/login";
+		return "Hallo thetta er server!";
 	}
 	
 	@RequestMapping(value="/login", method = RequestMethod.GET)
