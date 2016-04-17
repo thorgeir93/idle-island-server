@@ -1,0 +1,38 @@
+#view-friends button[type="submit"] {
+  margin: 0; }
+
+#view-friends form {
+  margin: 45px 0 45px 0;
+  text-align: left; }
+
+#view-friends p {
+  margin: 0 10px 0 10px !important;
+  display: inline-block;
+  margin: 0 0 0 0;
+  font-size: 40px; }
+
+
+
+h1{
+  text-align: center;
+  font-size: 120px;
+}
+
+input.subi2{
+	margin: 15px 0px 15px 0px !important;
+}
+
+
+input[class="subi"]{
+	margin-bottom: 50px;
+}
+
+ div.middle {
+ 	display: block;
+ 	/*padding:50px;*/
+	margin-right: auto;
+	margin-left: auto; 
+	max-width: 250px;
+	/*color: black !important;*/
+	overflow: hidden;
+}

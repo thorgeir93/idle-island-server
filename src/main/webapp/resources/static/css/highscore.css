@@ -1,0 +1,36 @@
+h1{
+  text-align: center;
+  font-size: 120px;
+}
+
+ div.middle {
+ 	display: block;
+ 	/*padding:50px;*/
+	margin-right: auto;
+	margin-left: auto; 
+	max-width: 250px;
+	/*color: black !important;*/
+	overflow: hidden;
+}
+
+select {
+	color: white;
+	background-color: transparent !important;
+	outline: 0px;
+	border: 2px solid #E0E0E0;
+	width: 100%;
+}
+
+
+select option{
+	/*background: transparent !important;*/
+	background-color: #29ABE2;
+	border: 2px solid #E0E0E0;
+	outline: 0;
+}
+
+
+
+.middle > form > input[type="submit"]{
+
+}

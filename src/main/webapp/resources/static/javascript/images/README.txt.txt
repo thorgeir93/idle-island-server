@@ -1,0 +1,1 @@
+Allar þessar stóru myndir sem eru merktar með tölu frá 1 uppí 8 er bakgrunnurinn í leiknum. 1 táknar það sem er næst áhorfandanum og 8 er færst.

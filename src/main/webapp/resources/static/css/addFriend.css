@@ -1,0 +1,31 @@
+h1{
+	font-size: 120px;
+	text-align: center;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    opacity: 0.5;
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  0.5;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  0.5;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   opacity: 0.5;
+   color:    white;
+}
+
+ div.middle {
+ 	display: block;
+ 	/*padding:50px;*/
+	margin-right: auto;
+	margin-left: auto; 
+	max-width: 250px;
+	/*color: black !important;*/
+	overflow: hidden;
+}

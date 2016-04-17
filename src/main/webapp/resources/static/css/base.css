@@ -1,0 +1,217 @@
+* {
+  -border: 1px solid red; }
+
+input[type='text'], input[type='password'] {
+  -webkit-appearance: none;
+  display: block;
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  line-height: 50px;
+  border: none;
+  border-bottom: 2px solid #E0E0E0; }
+  input[type='text']:focus, input[type='password']:focus {
+    outline: 0;
+    box-shadow: none;
+    border-bottom: 2px solid green; }
+
+div.options div.text a {
+  color: white;
+  text-decoration: none; }
+  div.options div.text a:hover {
+    text-decoration: underline red; }
+
+a {
+  display: block;
+  margin-top: 30px;
+  color: #E0E0E0;
+  text-decoration: none; }
+
+input[type='submit'] {
+  background-color: transparent;
+  color: #E0E0E0;
+  border: 0;
+  border: 2px solid #E0E0E0;
+  width: 100%;
+  right: 20px;
+  margin-top: 50px;
+  opacity: 0.7;
+  font-size: 20px; }
+  input[type='submit']:hover {
+    opacity: 1.0; }
+
+.container, .menu, div.options, div.options div.text, div.island {
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.menu {
+  display: block;
+  padding: 20px;
+  background-color: #29ABE2;
+  height: 100%; }
+
+/* BASES
+==================================*/
+html {
+  background-color: #29ABE2;
+  height: 100%;
+  /*background: url('../game/images/game-background-cave.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  z-index: 400; }
+
+h1{
+  margin: 0;
+}
+
+.padding {
+  padding: 60px;
+}
+
+.padd{
+  
+  /*display: block;
+  height: auto;
+  padding-bottom: 100px;*/
+}
+
+body {
+  /*position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;*/
+
+  min-height: 97%;
+
+  word-wrap: break-word;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  /*padding: 20px;*/
+  /*background: url('../game/images/game-background-cave.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/ }
+
+button {
+  cursor: pointer !important; }
+
+table {
+  font-size: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  border-spacing: 30px;
+  border-collapse: separate; }
+
+hr {
+  border: 0;
+  border-top: 2px solid #E0E0E0; }
+
+.container {
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  position: relative;
+  max-width: 336px;
+  width: 90%;
+  height: auto;
+  z-index: 2; }
+
+ div.middle {
+  display: block;
+  /*padding:50px;*/
+  margin-right: auto;
+  margin-left: auto; 
+  max-width: 250px;
+  /*color: black !important;*/
+  overflow: hidden;
+}
+
+
+/*SETTINGS
+===================================*/
+/* LOGIN | CREATE USER
+===============================*/
+/* MENU
+================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /*login/creat
+  	=========================*/
+  div.login h1 {
+    font-size: 80px; }
+  /*menu
+	====================*/
+  body > div.menu {
+    width: 100%;
+    padding: 0;
+    overflow: hidden; }
+    body > div.menu h1 {
+      font-size: 60px; }
+  #input-slider {
+    width: 100% !important;
+    display: block !important; } }
+
+.menu {
+  text-align: center;
+  display: block;
+  height: auto;
+  /*padding-bottom: 100px*/;
+}
+
+  .menu h1 {
+    color: white;
+    font-family: "Agency FB", arial;
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    margin-top: 0;
+    font-size: 140px; }
+  .menu .container {
+    width: 336px; }
+
+div.options {
+  padding-bottom: 100px;
+  /*width: $image-island-green-width;
+		height: $image-island-green-height;
+		
+		background-image: url('../images/menu-island-green.png');
+		background-size: cover;*/ }
+  div.options div.text {
+    padding-top: 68.2px;
+    width: 60%; }
+    div.options div.text a {
+      font: 20px "Agency FB", arial;
+      color: #006837;
+      margin: 0; }
+      div.options div.text a:hover {
+        border: 0; }
+
+div.island, div.sand {
+  display: block;
+  height: auto; }
+
+div.island {
+  width: 336px;
+  height: 392px;
+  background-image: url("../images/menu-island-green-waves-02.png"); }
+
+div.sand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 242px;
+  height: 346px;
+  background: url("../images/menu-island-sand.png");
+  z-index: -1; }
