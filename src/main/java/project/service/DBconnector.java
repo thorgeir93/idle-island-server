@@ -1,5 +1,7 @@
 package project.service;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.sql.Array;
 import java.sql.DriverManager;
 import java.sql.Connection;
@@ -32,6 +34,16 @@ public class DBconnector {
 	private boolean isConnected = false;
 	private Security security = new Security();
 	
+	private static Connection getConnection() throws URISyntaxException, SQLException {
+	    URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+	    String username = dbUri.getUserInfo().split(":")[0];
+	    String password = dbUri.getUserInfo().split(":")[1];
+	    String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+
+	    return DriverManager.getConnection(dbUrl, username, password);
+	}
+	
 	
 	public DBconnector() throws SQLException{
 		
@@ -45,15 +57,11 @@ public class DBconnector {
 
 			//this.connection = DriverManager.getConnection(
 			//		"jdbc:postgresql://localhost:5432/postgres", "postgres","1234");
-			this.connection = DriverManager.getConnection(
-					"postgres://kakguotrzpwkpj:sGn4MZYX6CL1gJoNTUwLx1Q5Xz@ec2-54-225-111-9.compute-1.amazonaws.com:5432/d7ddgflvauj7k3", "kakguotrzpwkpj","sGn4MZYX6CL1gJoNTUwLx1Q5Xz");
-			
+			this.connection = getConnection();
 
-		} catch (SQLException e) {
-
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
-			return;
-
 		}
 		
 		initTables();
