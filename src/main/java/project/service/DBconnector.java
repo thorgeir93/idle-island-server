@@ -43,8 +43,10 @@ public class DBconnector {
 
 		try {
 
+			//this.connection = DriverManager.getConnection(
+			//		"jdbc:postgresql://localhost:5432/postgres", "postgres","1234");
 			this.connection = DriverManager.getConnection(
-					"jdbc:postgresql://localhost:5432/postgres", "postgres","1234");
+					"jdbc:postgres://kakguotrzpwkpj:sGn4MZYX6CL1gJoNTUwLx1Q5Xz@ec2-54-225-111-9.compute-1.amazonaws.com:5432/d7ddgflvauj7k3", "kakguotrzpwkpj","sGn4MZYX6CL1gJoNTUwLx1Q5Xz");
 			
 
 		} catch (SQLException e) {
